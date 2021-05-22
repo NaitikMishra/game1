@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my name is naitik</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <style>
+    #child1 {
+      float: right;
+      background-color: blue;
+      font-size: 35px;
+    }
+    #child2 {
+      float: left;
+      background-color: rgb(29, 209, 83);
+    }
+    #child3 {
+      height: 200px;
+      width: 300px;
+      background-color: cadetblue;
+      float: right;
+    }
+    #naitik {
+      width: 90px;
+      height: 60px;
+      background-color: blue;
+    }
+    .firstCloud {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 150px;
+            animation: move 10s cubic-bezier(1, 0, 0, 1) 1s infinite backwards;
+            width: 150px;
+        }
+        
+        .secondCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(238, 148, 12);
+            position: absolute;
+            left: 0%;
+            top: 150px;
+            animation: move 10s linear 2.5s infinite backwards;
+            width: 150px;
+        }
+        
+        .thirdCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(80, 231, 20);
+            top: 150px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 4s infinite backwards;
+            width: 150px;
+        }
+        .fourthCloud {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(236, 18, 18);
+            position: absolute;
+            left: 0;
+            top: 150px;
+            animation: move 10s cubic-bezier(0.645, 0.045, 0.355, 1) 5.5s infinite backwards;
+            width: 150px;
+        }
+        
+        .fifthCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(201, 241, 21);
+            position: absolute;
+            left: 0%;
+            top: 150px;
+            animation: move 10s linear 7s infinite backwards;
+            width: 150px;
+        }
+        
+        .sixthCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 150px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 8.5s infinite backwards;
+            width: 150px;
+        }
+        .Cloud25 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 150px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 10s infinite backwards;
+            width: 150px;
+        }
+        .Cloud26 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 150px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 11.5s infinite backwards;
+            width: 150px;
+        }
+        .seventhCloud {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(20, 156, 235);
+            position: absolute;
+            left: 0;
+            top: 270px;
+            animation: move 10s cubic-bezier(0.47, 0, 0.745, 0.715) 2s infinite forwards;
+            width: 150px;
+        }
+        
+        .eigthCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(235, 106, 202);
+            position: absolute;
+            left: 0%;
+            top: 270px;
+            animation: move 10s linear 3s infinite forwards;
+            width: 150px;
+        }
+        
+        .nineCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(230, 87, 182);
+            top: 270px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 5s infinite forwards;
+            width: 150px;
+        }
+        .tenthCloud {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(71, 5, 60);
+            position: absolute;
+            left: 0;
+            top: 270px;
+            animation: move 10s linear 6s infinite forwards;
+            width: 150px;
+        }
+        
+        .eleventhCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(124, 72, 221);
+            position: absolute;
+            left: 0%;
+            top: 270px;
+            animation: move 10s cubic-bezier(0.6, 0.04, 0.98, 0.335) 8s infinite forwards;
+            width: 150px;
+        }
+        
+        .twelveCloud {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 270px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 9s infinite forwards;
+            width: 150px;
+        }
+        .Cloud27 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 270px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 10.5s infinite backwards;
+            width: 150px;
+        }
+        .Cloud28 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 270px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s linear 12s infinite backwards;
+            width: 150px;
+        }
+        .Cloud13 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 490px;
+            animation: move 10s cubic-bezier(0.755, 0.05, 0.855, 0.06) 1.25s infinite backwards;
+            width: 150px;
+        }
+        
+        .Cloud14 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(238, 148, 12);
+            position: absolute;
+            left: 0%;
+            top: 490px;
+            animation: move 10s linear 2.5s infinite backwards;
+            width: 150px;
+        }
+        
+        .Cloud15 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(80, 231, 20);
+            top: 490px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.785, 0.135, 0.15, 0.86) 4.25s infinite backwards;
+            width: 150px;
+        }
+        .Cloud16 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(236, 18, 18);
+            position: absolute;
+            left: 0;
+            top: 490px;
+            animation: move 10s linear 5.5s infinite backwards;
+            width: 150px;
+        }
+        
+        .Cloud17 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(201, 241, 21);
+            position: absolute;
+            left: 0%;
+            top: 490px;
+            animation: move 10s linear 7.25s infinite backwards;
+            width: 150px;
+        }
+        
+        .Cloud18 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 490px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.6, -0.28, 0.735, 0.045) 8.5s infinite backwards;
+            width: 150px;
+        }
+        .Cloud29 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 490px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.6, -0.28, 0.735, 0.045) 10s infinite backwards;
+            width: 150px;
+        }
+        .Cloud30 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 490px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.6, -0.28, 0.735, 0.045) 11s infinite backwards;
+            width: 150px;
+        }
+        .Cloud19 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(20, 156, 235);
+            position: absolute;
+            left: 0;
+            top: 390px;
+            animation: move 10s cubic-bezier(0.47, 0, 0.745, 0.715) 2.25s infinite forwards;
+            width: 150px;
+        }
+        
+        .Cloud20 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(235, 106, 202);
+            position: absolute;
+            left: 0%;
+            top: 390px;
+            animation: move 10s linear 3s infinite forwards;
+            width: 150px;
+        }
+        
+        .Cloud21 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(230, 87, 182);
+            top: 390px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.86, 0, 0.07, 1) 5s infinite forwards;
+            width: 150px;
+        }
+        .Cloud22 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(71, 5, 60);
+            position: absolute;
+            left: 0;
+            top: 390px;
+            animation: move 10s linear 6.25s infinite forwards;
+            width: 150px;
+        }
+        
+        .Cloud23 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(124, 72, 221);
+            position: absolute;
+            left: 0%;
+            top: 390px;
+            animation: move 10s linear 8s infinite forwards;
+            width: 150px;
+        }
+        
+        .Cloud24 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 390px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.77, 0, 0.175, 1) 9.25s infinite forwards;
+            width: 150px;
+        }
+        .Cloud31 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 390px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.6, -0.28, 0.735, 0.045) 10.5s infinite backwards;
+            width: 150px;
+        }
+        .Cloud32 {
+          height: 100px;
+            width: 100px;
+            background-color: rgb(10, 10, 17);
+            top: 390px;
+            left: 0%;
+            position: absolute;
+            animation: move 10s cubic-bezier(0.6, -0.28, 0.735, 0.045) 11.75s infinite backwards;
+            width: 150px;
+        }
+        #jadu{
+          height: 50px;
+          width: 50px;
+          background-color: cornflowerblue;
+          top: 270px;
+          left: 50%;
+          position: absolute;
+        }
+        #check{
+          height: 35px;
+          width: 50px;
+          background-color: cornflowerblue;
+          top: 0px;
+          left: 50%;
+          position: absolute;
+          border-radius: 200px;
+        }
+        .final {
+           width: 100%;
+           height: 50px;
+          top: 600px;
+          left: 0%;
+          background-color: lightgoldenrodyellow;
+          position: absolute;
+        }
+        
+        @-webkit-keyframes move {
+          from {-webkit-transform: translateX(-400px);}
+          to {-webkit-transform: translateX(2000px);}
+        }
+        }
+  </style>
+  <script>
+    function drag(event) {
+  event.dataTransfer.setData("drag-item", ev.target.id);
+  console.log(event.dataTransfer.getData("drag-item"));  
+    }
+    function drag_over(event) {
+                event.preventDefault();
+                return false;
+      </script>
+      <script>
+        var a=0;
+        function myFunctionkomp1()
+      {  
+         a+=120;
+         document.getElementById("check").style.top=a+"px";
+         if(a==600)
+         alert("you got it");
+      }
+  </script>
+  <script type="text/javascript">
+          
+          function getPositionXY(element) {
+              var rect = element.getBoundingClientRect();
+              document.getElementById('check').innerHTML = 
+              "don't have to click you have to drag";
+          }
+      </script>
+  <body >
+    <div id="w3-show-inline-block" style="background-color: blue">
+      <div id="mydiv"></div>
+      <div id="naitik">
+        
+        </div>
+        <p>Here you are given a moving car with a frog on one slide you have to drag the given circle without coming in contact with 
+          these moving car</p>
+    </div>
+    <div id="drop"></div>
+    <div id="check" draggable="true" ondragstart="drag(event)" style="position: relative;" 
+     onclick = "getPositionXY(this),myFunctionkomp1()"
+    >
+    </div>
+    
+    <script type="text/babel">
+      class Hello extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = this.getTime();
+          //this.state={ a:'100px'}
+          //this.onChange=this.onChange.bind(this);
+        }
+        componentDidMount() {
+          this.setTimer();
+        }
+        setTimer() {
+          clearTimeout(this.timeout);
+          this.timeout = setTimeout(this.updateClock.bind(this), 1000);
+        }
+        updateClock() {
+          this.setState(this.getTime, this.setTimer);
+        }
+        getTime() {
+          const currentTime = new Date();
+          return {
+            hours: currentTime.getHours(),
+            minutes: currentTime.getMinutes(),
+            seconds: currentTime.getSeconds(),
+            ampm: currentTime.getHours() >= 12 ? "pm" : "am",
+          };
+        }
+        //onChange(){
+          //this.setState({a=a+100})
+        //}
+        render() {
+          const { hours, minutes, seconds, ampm } = this.state;
+          return (
+            <div className="clock">
+              <div id="child1">
+                {hours == 0 ? 12 : hours > 12 ? hours - 12 : hours}:
+                {minutes > 9 ? minutes : `0${minutes}`}:
+                {seconds > 9 ? seconds : `0${seconds}`} {ampm}
+              </div>
+              <div
+                id="child2"
+                onDragStart={(e) => {
+                  e.dataTransfer.setData("drag-item", e.target.id);
+                  console.log(e.dataTransfer.getData("drag-item"));
+                }}
+                draggable
+              >
+                <form action="https://www.google.com/">
+                  <p>
+                    search
+                    <input type="search" placeholder="google" />
+                  </p>
+                </form>
+              </div>
+              
+              <div class="clouds">
+            <div id="one" class="firstCloud" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();
+                  alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+                        
+            </div>  
+            <div class="secondCloud" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();
+                  alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="thirdCloud"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>    
+            <div class="fourthCloud" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="fifthCloud" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="sixthCloud"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>   
+            <div class="Cloud25"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div> 
+            <div class="Cloud26"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div> 
+            <div class="seventhCloud" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="eigthCloud" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="nineCloud"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>    
+            <div class="tenthCloud" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="eleventhCloud" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="twelveCloud"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>  
+            <div class="Cloud27"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>   
+            <div class="Cloud28"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>  
+            <div class="Cloud13" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="Cloud14" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="Cloud15"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>    
+            <div class="Cloud16" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="Cloud17" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="Cloud18"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>  
+            <div class="Cloud29"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>  
+            <div class="Cloud30"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div> 
+            <div class="Cloud19" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="Cloud20" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="Cloud21"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>    
+            <div class="Cloud22" onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>        
+            </div>  
+            <div class="Cloud23" 
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over"); // this is just for debugging
+                }}>
+            </div>
+            <div class="Cloud24"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>  
+            <div class="Cloud31"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div> 
+            <div class="Cloud32"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you got out");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div> 
+            <div class="final"
+            onDrop={(e) => {
+                  e.preventDefault;
+                  var data = e.dataTransfer.getData("drag-item");
+                  e.target.appendChild(document.getElementById(data));alert("you won");
+                }}
+                onDragOver={(e) => {
+                  e.preventDefault();alert("you won");
+                  console.log("dragged over");
+                    // this is just for debugging
+                }}>
+            </div>  
+             </div>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<Hello />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
